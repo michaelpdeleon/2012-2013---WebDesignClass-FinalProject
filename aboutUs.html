@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Us</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>	
+<header>
+	
+		<hgroup>
+    		<a href="home.html"><img id="logo" src="images/headerLogo_editedmike.png" alt="Veia Logo"></a>
+        	<img id="bldg" src="images/header_bldg_editedmike.png" alt="Building Logo">
+        	<img id="tagline" src="images/headerTagLine.png" alt="Where restaurants live">
+        	<a href="http://www.facebook.com" target="_blank"><img id="fbicon" src="images/header_fbicon.png" alt="Facebook icon"></a>
+    	    <a href="http://www.twitter.com" target="_blank"><img id="twittericon" src="images/header_twittericon.png" alt="Twitter icon"></a>
+		</hgroup>
+           
+		<nav>
+			<ul> <!--Navigation-->
+				<li><a href="home.html">Home</a></li>
+                <li><a href="restaurant/restaurant.php">Categories</a></li>
+				<li><a href="list.php">List</a></li>
+				<li><a href="add.html">Add</a></li>
+            	<li><a href="aboutUs.html">About Us</a></li>
+            	<li><a href="blog.html">Blog</a></li>
+   			</ul>
+		</nav>
+		<div id="customize">
+			<p>Background</p>
+            <ul>
+				<li id="yellow"></li>
+				<li id="white"></li>
+				<li id="green"></li>
+			</ul>
+		</div>
+</header>
+
+<div id=ContactUs>
+<h1>Contact Us</h1>
+
+<form action="send_form_email.php" method="post">
+<fieldset>
+<legend>Send a message</legend>
+	<ul>
+		<li><input type="text" name="name" id="form-name" placeholder="Name"></li>
+		<li><input type="email" name="email" id="form-email" placeholder="Email"></li>
+		<li><textarea name="message" rows="4" cols="60" maxlength="300" id="form-message" placeholder="Message (less than 300 characters)"></textarea></li>
+        <p><input type="submit" value="Send"><input type="reset"></p>
+    </ul>
+</fieldset>
+</form>
+
+<p>OR</p>
+
+<p><a href="http://www.facebook.com" target="_blank"><img id="facebook_findus" src="images/facebook_findus.png"></a> AND <a href="http://www.twitter.com" target="_blank"><img id="twitter_bird" src="images/twitter_bird.png"></a></p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

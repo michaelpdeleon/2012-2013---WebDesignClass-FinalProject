@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add A Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header>
+	
+		<hgroup>
+    		<a href="home.html"><img id="logo" src="images/headerLogo_editedmike.png" alt="Veia Logo"></a>
+        	<img id="bldg" src="images/header_bldg_editedmike.png" alt="Building Logo">
+        	<img id="tagline" src="images/headerTagLine.png" alt="Where restaurants live">
+        	<a href="http://www.facebook.com" target="_blank"><img id="fbicon" src="images/header_fbicon.png" alt="Facebook icon"></a>
+    	    <a href="http://www.twitter.com" target="_blank"><img id="twittericon" src="images/header_twittericon.png" alt="Twitter icon"></a>
+		</hgroup>
+           
+		<nav>
+			<ul> <!--Navigation-->
+				<li><a href="home.html">Home</a></li>
+                <li><a href="restaurant/restaurant.php">Categories</a></li>
+				<li><a href="list.php">List</a></li>
+				<li><a href="add.html">Add</a></li>
+            	<li><a href="aboutUs.html">About Us</a></li>
+            	<li><a href="blog.html">Blog</a></li>
+   			</ul>
+		</nav>
+		<div id="customize">
+			<p>Background</p>
+            <ul>
+				<li id="yellow"></li>
+				<li id="white"></li>
+				<li id="green"></li>
+			</ul>
+		</div>
+</header>
+
+<div id="AddRestaurant">
+<h1>Add A Restaurant</h1>
+
+<form action="add_restaurant.php" method="post">
+<fieldset>
+<legend>Enter restaurant info</legend>
+	<ul>
+		<li><input type="text" name="name" id="form-name" placeholder="Restaurant"></li>
+		<li><input type="text" name="address" id="form-address" placeholder="Address"></li>
+		<li><input type="text" name="city" id="form-city" placeholder="City"></li>
+        <li><input type="text" name="state" id="form-state" placeholder="State"></li>
+        <li><input type="text" name="zip" id="form-zip" placeholder="Zip"></li>
+        <li><input type="tel" name="phone" id="form-phone" placeholder="Phone"></li>
+        <p>Category:
+        <select name="category" size="1">
+    		<option value="0">American</option>
+        	<option value="1">Mexican</option>
+        	<option value="2">Italian</option>
+        	<option value="3">Asian</option>
+        	<option value="4">Mediterranean</option>
+        	<option value="5">Pizza</option>
+        	<option value="6">Burgers</option>
+        	<option value="7">Sandwiches</option>
+        	<option value="8">Dessert</option>
+            <option value="9">Other</option>
+    	</select>
+        </p>
+        <p><input type="submit" value="Add"><input type="reset"></p>
+    </ul>
+</fieldset>
+</form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

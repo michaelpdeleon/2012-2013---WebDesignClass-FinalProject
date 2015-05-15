@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #333;
+	width: 960px;
+}
+
+/* Begin pseudo-classes */
+a img {
+	border: 0;
+}
+/* End pseudo-classes */
+
+/* Header */
+hgroup {
+	padding: 0;
+	margin: 10px 0 0 10px;
+}
+#logo {
+	margin: 0 0 30px;
+}
+#bldg {
+	margin: 0 0 0 -20px;
+}
+#fbicon {
+	margin: 0 0 0 12em;
+}
+	/*Customize Site Formatting */
+#customize{margin:0 0 30px; overflow: hidden; float:right;}
+#customize li{cursor:pointer; display:block; background:white; margin:0 0 0 5px; float:left;}
+#customize p{float:left; font-size: 10px;}
+#customize ul{float:left; padding-left: 0;}
+#customize li:nth-child(1), #customize li:nth-child(3) { padding: 0; width:8px; height: 8px;}
+li#yellow{background: #FFFFF0; border:1px solid #333;}
+li#white{background: #FFF; border:1px solid #333; width: 8px; height: 8px; padding: 0;}
+li#green{background: #E6FFF0; border:1px solid #333;}
+/*End of Header */
+
+/*Navigation*/
+nav{
+	
+	background-color: #81b395;
+	border:solid .05em;
+	width:100%;
+	padding:-1em;
+	min-width:700px;
+}
+nav ul
+{
+	text-align:center;
+}
+nav li
+{
+	display:inline-block;
+}
+nav a:link{
+	padding: .5em;
+	margin: 0 1.5em;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+nav a:link, nav a:visited  {color:white; font-weight:bold; font-size:18px;}
+nav a:hover {color:#eed7ff; font-weight:bold; font-size:18px;}
+nav a:active{ color:black;}
+/*End Navigation*/
+
+#Home, #ContactUs, #ContactUsTY, #AddRestaurant, #AddARestaurantPHP, #AddARestaurantSuccess, #ListRestaurant, #ListResultCity, #Restaurants, #BlogMain {
+	margin: 20px;
+}
+/*  Begin Home */
+wrapper{
+	width: 960px; margin: 0 auto;
+}
+figure{
+	float:left;width:30%; min-width:150px; margin:0 0 1.25em 3%;
+}
+#Homemain{width: 200px;height: 500px; float: left; padding: 10px; border: 2px solid gray;margin: 20px;}
+#Homebox2{width: 390px;height: 500px; float: left; padding: 10px; border: 2px solid gray;margin: 20px; }
+#HomeApp{width: 150px;height: 160px; float: right; padding: 10px; border: 2px solid gray;margin: 0px;}
+#HomeAds{width: 150px;height: 250px; float: right; padding: 10px; border: 2px solid gray;margin: 0 0 10px 0;text-align: justify;}
+p{font-size: larger; text-align: justify;}
+h3{ color: #393;}
+h4{ color: #060;}
+
+/*  End Home */
+
+/* Begin Contact Us */
+#ContactUs ol, ul { 
+	list-style-type: none;
+}
+#ContactUs img#facebook_findus {
+	padding-right: 20px;
+}
+#ContactUs img#twitter_bird {
+	padding-left: 20px;
+}
+/* End Contact Us */
+
+/* Begin Add A Restaurant */
+#AddARestaurantSuccess h1 {
+	font-size: 18px;
+}
+#AddARestaurantSuccess p {
+	font-size: 12px;
+	margin: 5px 0;
+}
+#AddARestaurantSuccess p b {
+	font-weight: bold;
+}
+/* End Add A Restaurant */
+
+/* Begin List Restaurants */
+#ListResultTotal {
+	font-size: 12px;
+	font-style: italic;
+	color: #C00;
+}
+#ListResultTable {
+	border: #999 solid 1px;
+	text-align: left;
+}
+#ListResultTable th {
+	background-color: #FFC;
+	border: #999 solid 1px;
+	padding: 5px;
+	font-size: 12px;
+	color: #333;
+}
+#ListResultTable td {
+	background-color: #FFF;
+	border: #999 solid 1px;
+	padding: 5px;
+	font-size: 12px;
+}
+/* End List Restaurants */
+
+/* Begin Restaurants */
+#RestaurantsNavigation {
+    width: 250px;
+    font-size: 11px;
+    float:left;
+    margin:0 20px 0 20px;
+}
+#RestaurantsNavigation ul {
+    margin: 0px;
+    padding: 0px;
+}
+#RestaurantsNavigation li { list-style: none; 
+}
+#RestaurantsNavigation a {
+    color: #fff;
+    cursor: pointer;
+    display:block;
+    height:25px;
+    line-height: 25px;
+    text-indent: 10px;                    
+    text-decoration:none;
+    width:100%;
+}
+#RestaurantsNavigation a:hover{ text-decoration:underline;    }
+#RestaurantsNavigation li:hover {
+    background: #666;
+    position: relative;
+}
+#RestaurantsNavigation .sub-level { background: #81b395; }
+#RestaurantsNavigation .sub-level .sub-level { background: #81b395; }
+
+/* Main Style
+*******************/
+#RestaurantsMain{
+    float:left;
+    width:660px;
+	font-size: 12px;
+}
+#RestaurantsFirstimg {
+    float:left;
+    margin-right:10px;
+}
+#RestaurantsSecondimg{
+    float:right;
+    margin-left:10px;
+}
+#RestaurantsFirstpara {
+    float:left;
+    width:700px;
+}
+#RestaurantsSecondpara{
+    clear:both;
+    width:700px;
+}
+/* End Restaurants */
+
+/* Begin Blog */
+p.blogParagraph {
+	text-align:left;
+	min-width:30px;
+	max-width:600px;
+	margin: 1em auto 0em;
+	padding: 1.25em 4% 0em;
+} 
+h2.blogDate {text-align:left; margin-left:2em;} 
+
+/* End Blog */
+
+

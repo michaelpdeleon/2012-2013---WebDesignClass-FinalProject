@@ -42,8 +42,6 @@
 
     $db_hostname = 'localhost';
     $db_database = 'group13db';
-    //$db_username = 'group13user';
-    //$db_password = 'group13password';
     $db_username = 'root';
     $db_password = 'root';
     
